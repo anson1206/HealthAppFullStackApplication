@@ -1,0 +1,14 @@
+﻿node_modules/
+Backend/node_modules/
+HealthAppFullStack/node_modules/
+.env
+.env.local
+.DS_Store
+dist/
+build/
+coverage/
+.vscode/
+.idea/
+npm-debug.log
+yarn-error.log
+*.log
