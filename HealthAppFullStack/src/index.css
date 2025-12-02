@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import a clean UI font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root{
+	--brand-1: #6D28D9; /* indigo-700 */
+	--brand-2: #EC4899; /* pink-500 */
+	--muted: #6b7280; /* gray-500 */
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+body{
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color: #0f172a;
+}
+
+.card {
+	@apply bg-white rounded-lg shadow-md p-6;
+}
+
+.btn-brand {
+	background: linear-gradient(90deg,var(--brand-1),var(--brand-2));
+	color: white;
+}
+
+.file-input {
+	@apply text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100;
+}
